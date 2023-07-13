@@ -1,0 +1,61 @@
+hp =
+2
+armor =
+0
+alco =
+0
+people =
+0
+pos_x(player) =
+1
+pos_y(player) =
+3
+pos_x(medicine) =
+1
+pos_y(medicine) =
+5
+pos_x(people) =
+1
+pos_y(people) =
+8
+pos_x(people) =
+3
+pos_y(people) =
+1
+pos_x(enemy) =
+3
+pos_y(enemy) =
+8
+pos_x(enemy) =
+7
+pos_y(enemy) =
+5
+pos_x(armor) =
+7
+pos_y(armor) =
+7
+pos_x(medicine) =
+9
+pos_y(medicine) =
+3
+pos_x(b1) =
+9
+pos_y(b1) =
+7
+pos_x(armor) =
+10
+pos_y(armor) =
+5
+pos_x(b2) =
+10
+pos_y(b2) =
+7
+pos_x(people) =
+28
+pos_y(people) =
+1
+pos_x(alcogol) =
+28
+pos_y(alcogol) =
+3
+finish

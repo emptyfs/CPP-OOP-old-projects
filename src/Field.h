@@ -24,6 +24,7 @@ public:
     void Player_1(int x, int y, bool val);
     void del_Player_1(int x, int y, bool val);
 
-friend class drow;
+friend class Game_Manager;
 friend class Iterator;
+friend class Save_game;
 };

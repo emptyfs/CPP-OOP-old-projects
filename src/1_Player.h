@@ -1,5 +1,8 @@
 #pragma once
 
+#include <ostream>
+
+
 class Player_1
 {
 private:
@@ -12,6 +15,11 @@ private:
 
 public:
     Player_1();
+
+    void set_hp(int);
+    void set_armor(int);
+    void set_alco(int);
+    void set_saved_people(int);
 
     int get_hp();
     int get_pos_x();
@@ -31,4 +39,6 @@ public:
     void steal_alco();
     void add_alco();
     void add_saved_people();
+    void steal_people();
+    void restart();
 };

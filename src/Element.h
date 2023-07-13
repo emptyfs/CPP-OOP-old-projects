@@ -5,4 +5,5 @@ class Element
 {
 public:
     virtual void operator+(Player_1&) = 0;
+    virtual ~Element(){};
 };

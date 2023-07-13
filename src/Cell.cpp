@@ -13,6 +13,13 @@ Cell::Cell()
     this->enemy = false;
     this->medicine = false;
     this->player_11 = nullptr;
+    this->opponents = nullptr;
+    this->behavior_people = nullptr;
+    this->behavior_steal_alco = nullptr;
+    this->behavior_to_start = nullptr;
+    this->b1 = false;
+    this->b2 = false;
+    this->b3 = false;
 }
 
 Cell::~Cell(){};
@@ -98,24 +105,24 @@ void Cell::set_Player_1(Player_1* player)
     this->player_11 = player;
 }
 
-void Cell::delete_Element()
+void Cell::set_Opponents(Opponents<Behavior>* opponents)
 {
-    if (this->element == nullptr)
-    {
-        return;
-    }
-    delete this->element;
-    this->element = nullptr;
+    this->opponents = opponents;
 }
 
-void Cell::delete_Player_1()
+void Cell::set_Behavior_people(Behavior_people* behavior_people)
 {
-    if (this->player_11 == nullptr)
-    {
-        return;
-    }
-    delete this->player_11;
-    this->player_11 = nullptr;
+    this->behavior_people = behavior_people;
+}
+
+void Cell::set_Behavior_steal_alco(Behavior_steal_alco* behavior_steal_alco)
+{
+    this->behavior_steal_alco = behavior_steal_alco;
+}
+
+void Cell::set_Behavior_to_start(Behavior_to_start* behavior_to_start)
+{
+    this->behavior_to_start = behavior_to_start;
 }
 
 bool Cell::get_alcogol()
@@ -146,4 +153,54 @@ bool Cell::get_people()
 Element* Cell::get_Element()
 {
     return this->element;
+}
+
+void Cell::set_b1(bool val)
+{
+    b1 = val;
+}
+
+void Cell::set_b2(bool val)
+{
+    b2 = val;
+}
+
+void Cell::set_b3(bool val)
+{
+    b3 = val;
+}
+
+bool Cell::get_b1()
+{
+    return b1;
+}
+
+bool Cell::get_b2()
+{
+    return b2;
+}
+
+bool Cell::get_b3()
+{
+    return b3;
+}
+
+Opponents<Behavior>* Cell::get_Opponents()
+{
+    return opponents;
+}
+
+Behavior_people* Cell::get_Behavior_people()
+{
+    return behavior_people;
+}
+
+Behavior_steal_alco* Cell::get_Behavior_steal_alco()
+{
+    return behavior_steal_alco;
+}
+
+Behavior_to_start* Cell::get_Behavior_to_start()
+{
+    return behavior_to_start;
 }
